@@ -1,0 +1,10 @@
+server:
+  port: 8761
+  
+eureka:  client:    register-with-eureka: false
+    fetch-registry: false
+    instance:
+      metadata-map:
+        app-owner: Jaime Reyes
+        description: Eureka Server
+        initial-status: UP

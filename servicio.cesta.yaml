@@ -1,0 +1,26 @@
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+    instance:
+      status-page-url-path: /infoCesta
+      health-check-url-path: /healthCesta
+      metadata-map:
+        app-owner: Jaime Reyes
+        description: Servicio Cesta
+        initial-status: UP
+
+# HTTP Server
+server:
+  port: 5555   # HTTP (Tomcat) port
+  
+
+  
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/carritomicro?useSSL=false&serverTimezone=UTC
+    username: escalab
+    password: escalab
+  jpa:
+    generate-ddl: true

@@ -1,0 +1,14 @@
+server:
+  port: 7777
+
+eureka:
+  client:
+    service-url:
+     default-zone: http://localhost:8761/eureka/
+  instance:
+    status-page-url-path: /infoProductos
+    health-check-url-path: /healthProductos
+    metadata-map:
+       app-owner: Jaime Reyes
+       description: Servicio Productos
+       initial-status: UP
